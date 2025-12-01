@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace AuthLibrary.Constants.Authentication
 {
+    //hhhhhh//ahdgdf
     public record AppPermission(string Service, string Feature, string Action, string Group, string Description, bool IsBasic=false)
     {
         public string Name => NameFor(Service, Feature, Action);
