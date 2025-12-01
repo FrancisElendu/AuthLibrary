@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AuthLibrary.Permissions
 {
-    //hhhhhh
+    //hhhhhh//ahdgdf
     public class PermissionRequirement : IAuthorizationRequirement
     {
         public string Permission { get; set; }
