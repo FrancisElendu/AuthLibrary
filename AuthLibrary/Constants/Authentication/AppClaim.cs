@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AuthLibrary.Constants.Authentication
-{
-    //hhhhhh
+{ 
+    //from github
     public class AppClaim
     {
         public const string Permission = "permission";
