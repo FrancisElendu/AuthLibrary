@@ -1,10 +1,5 @@
 ﻿using AuthLibrary.Constants.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AuthLibrary.Permissions
 {
@@ -12,11 +7,11 @@ namespace AuthLibrary.Permissions
     {
         public PermissionAuthorizationHandler()
         {
-                
+
         }
         protected override async Task HandleRequirementAsync(AuthorizationHandlerContext context, PermissionRequirement requirement)
         {
-            if(context.User == null)
+            if (context.User == null)
             {
                 await Task.CompletedTask;
             }

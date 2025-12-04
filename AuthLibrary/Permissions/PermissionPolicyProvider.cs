@@ -1,11 +1,6 @@
 ﻿using AuthLibrary.Constants.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AuthLibrary.Permissions
 {
@@ -28,7 +23,7 @@ namespace AuthLibrary.Permissions
 
         public Task<AuthorizationPolicy> GetPolicyAsync(string policyName)
         {
-            if(policyName.StartsWith(AppClaim.Permission, StringComparison.OrdinalIgnoreCase))
+            if (policyName.StartsWith(AppClaim.Permission, StringComparison.OrdinalIgnoreCase))
             {
                 var policy = new AuthorizationPolicyBuilder();
                 policy.AddRequirements(new PermissionRequirement(policyName));
